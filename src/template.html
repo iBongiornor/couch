@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title><% preact.title %></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
+
+    <% preact.headEnd %>
+  </head>
+  <body>
+    <% preact.bodyEnd %>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+    <script>
+      document.body.addEventListener(
+        "touchmove",
+        (e) => {
+          e.preventDefault();
+        },
+        { passive: false }
+      );
+    </script>
+  </body>
+</html>
